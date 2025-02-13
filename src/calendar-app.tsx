@@ -70,7 +70,7 @@ const CalendarApp = () => {
           {daysInMonth.map(day => (
             <div
               key={day.toString()}
-              className={`p-2 border rounded ${isSameDay(day, new Date()) ? 'bg-blue-100' : ''} ${isSameDay(day, selectedDate) ? 'bg-gray-100' : ''}`}
+              className={`p-2 border rounded ${isSameDay(day, new Date()) ? 'bg-blue-100' : ''} ${selectedDate && isSameDay(day, selectedDate) ? 'bg-gray-100' : ''}`}
               onClick={() => handleDateClick(day)}
             >
               {format(day, 'd')}

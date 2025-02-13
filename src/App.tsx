@@ -1,4 +1,3 @@
-import React from 'react'
 import CalendarApp from './calendar-app'
 
 function App() {
